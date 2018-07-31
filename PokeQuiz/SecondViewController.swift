@@ -294,10 +294,11 @@ class SecondViewController: UIViewController {
         print("top")
         if(isTop){
             scoreLabel.text = "Score: \(score)"
+             ProgressHUD.showSuccess("Correct!")
             print("This is the answer")
         }
         else{
-            //ProgressHUD.showError("Wrong!")
+            ProgressHUD.showError("Wrong!")
             print("WRONG ANSWER")
         }
         isAnswer.removeAll()
@@ -312,10 +313,11 @@ class SecondViewController: UIViewController {
         if(isRight){
             score = score + 1
             scoreLabel.text = "Score: \(score)"
+             ProgressHUD.showSuccess("Correct!")
             print("This is the answer")
         }
         else{
-            
+            ProgressHUD.showError("Wrong!")
             print("WRONG ANSWER")
         }
         isAnswer.removeAll()
@@ -329,10 +331,11 @@ class SecondViewController: UIViewController {
         if(isBot){
             score = score + 1
             scoreLabel.text = "Score: \(score)"
+            ProgressHUD.showSuccess("Correct!")
             print("This is the answer")
         }
         else{
-            // ProgressHUD.showError("Wrong!")
+            ProgressHUD.showError("Wrong!")
             print("WRONG ANSWER")
         }
         isAnswer.removeAll()
@@ -347,10 +350,11 @@ class SecondViewController: UIViewController {
         if(isLeft){
             score = score + 1
             scoreLabel.text = "Score: \(score)"
+             ProgressHUD.showSuccess("Correct!")
             print("This is the answer")
         }
         else{
-            //ProgressHUD.showError("Wrong!")
+            ProgressHUD.showError("Wrong!")
             print("WRONG ANSWER")
         }
         isAnswer.removeAll()
