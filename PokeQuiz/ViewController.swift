@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     @IBAction func playButton(_ sender: Any) {
         if( greenScreenLabel.text == "Who's That Pokemon?"){
             performSegue(withIdentifier: "WhoPokemon", sender: self)
-            print("Transition")
         }
     }
     
