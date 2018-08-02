@@ -63,14 +63,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pokemonImages = populatePics(1,151,10)
-        print(pokemonImages)
-        
-        for i in 0...(pokeArray.count-1){
-            pokeArray[i] = baseURL + String(pokemonImages[i])
-            questionNumberLabel.text = "\(count)/10"
-        }
-        scoreLabel.text = "Score: \(score)"
+         loadPics()
         
         nextPokemon()
     }
@@ -79,10 +72,6 @@ class SecondViewController: UIViewController {
         
     }
     
-    //        isNotName = false
-    //        getPokemonData(url: pokeArray[count])
-    //         count = count + 1
-    //         updateButtonLabels()
     
     @IBAction func tester(_ sender: Any) {
         nextPokemon()
@@ -101,7 +90,7 @@ class SecondViewController: UIViewController {
                     let pokemonJSON : JSON = JSON(response.result.value!)
                     switch self.UICounter{
                     case 0:
-                        print(self.isAnswer[url]!)
+                       // print(self.isAnswer[url]!)
                         if(self.isAnswer[url] == true){
                             self.isTop = true
                         }
@@ -229,8 +218,13 @@ class SecondViewController: UIViewController {
         return randomChoices
     }
     func nextPokemon(){
+        if(count<10){
         rightAnswer = String(pokemonImages[count])
         print(rightAnswer)
+        }
+        else{
+            loadPics()
+        }
         updateButtonLabels()
         UICounter = 0
         questionNumberLabel.text = "\(count)/10"
@@ -243,8 +237,9 @@ class SecondViewController: UIViewController {
     
     
     
+    
     func updateButtonLabels(){
-        
+         if(count<10){
         randomInt = randomChoice()
         var randInt = Int(arc4random_uniform(4))
         randomInt.append(pokemonImages[count])
@@ -260,7 +255,7 @@ class SecondViewController: UIViewController {
             String($0)
         }
         //Now random IntString contains the full URL for each of its 3 random strings
-        
+       
         for i in 0...(randomIntString.count-1){
             randomIntString[i] = baseURL + randomIntString[i]
             isAnswer[randomIntString[i]] = false
@@ -282,10 +277,24 @@ class SecondViewController: UIViewController {
         getPokemonNameData(url: randomIntString[2])
         
         getPokemonNameData(url: randomIntString[3])
-        
+       
         getPokemonImageData(url: pokeArray[count])
-        count = count + 1
+            count = count + 1
+        }
+       else{
+            score = 0
+            count = 0
+            let alert = UIAlertController(title: "Congrats You've Finished the Quiz!", message: "Would you like to play again?", preferredStyle: .alert)
+            let restartAction = UIAlertAction(title: "Restart" ,style: .default, handler:{
+                (UIAlertAction) in
+                self.nextPokemon()
+            })
+            alert.addAction(restartAction)
+            present(alert,animated: true, completion: nil)
+        }
         
+       
+       
         
     }
     
@@ -293,8 +302,9 @@ class SecondViewController: UIViewController {
     @IBAction func topButonAction(_ sender: Any) {
         print("top")
         if(isTop){
+            score = score + 1
             scoreLabel.text = "Score: \(score)"
-             ProgressHUD.showSuccess("Correct!")
+            ProgressHUD.showSuccess("Correct!")
             print("This is the answer")
         }
         else{
@@ -342,6 +352,16 @@ class SecondViewController: UIViewController {
         nextPokemon()
         
         
+        
+    }
+    func loadPics(){
+        pokemonImages = populatePics(1,151,10)
+        print(pokemonImages)
+        
+        for i in 0...(pokeArray.count-1){
+            pokeArray[i] = baseURL + String(pokemonImages[i])
+        }
+        scoreLabel.text = "Score: \(score)"
         
     }
     
