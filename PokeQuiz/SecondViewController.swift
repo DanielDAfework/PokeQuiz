@@ -19,7 +19,12 @@ class SecondViewController: UIViewController {
     var baseURL = "https://pokeapi.co/api/v2/pokemon/"
     var count = 0
     
-    //Array which stores the strings that contain the full API image call
+    var pokemonGenerationStart : Int = 0
+    var pokemonGenerationEnd : Int = 0
+    
+    
+    
+    //Array which stores the strings that contain the full API image call also contains the answers
     var pokeArray = ["","","","","","","","","",""]
     //Stores the numbers that will be used to get the names of the pokemon choices
     var randomChoices = ["","","",""]
@@ -29,7 +34,6 @@ class SecondViewController: UIViewController {
     //boolean that will be used to determine if the selected answer is true or false
     var isAnswer = [String: Bool]()
     var pokeNames = [String]()
-    var empty = " "
     var isAnswer1 = [String: Bool]()
     
     var choice = 0
@@ -61,8 +65,10 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var pictureView: UIImageView!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
          loadPics()
         
         nextPokemon()
@@ -90,7 +96,7 @@ class SecondViewController: UIViewController {
                     let pokemonJSON : JSON = JSON(response.result.value!)
                     switch self.UICounter{
                     case 0:
-                       // print(self.isAnswer[url]!)
+                      
                         if(self.isAnswer[url] == true){
                             self.isTop = true
                         }
@@ -208,7 +214,7 @@ class SecondViewController: UIViewController {
     func randomChoice() -> [Int]{
         var randomChoices = [Int]()
         while randomChoices.count != 3{
-            let myNumber = Int(arc4random_uniform(151)+1)
+            let myNumber = Int(arc4random_uniform(807)+1)
             if (!randomChoices.contains(myNumber) &&
                 !pokemonImages.contains(myNumber)){
                 randomChoices.append(myNumber)
@@ -218,6 +224,7 @@ class SecondViewController: UIViewController {
         return randomChoices
     }
     func nextPokemon(){
+        
         if(count<10){
         rightAnswer = String(pokemonImages[count])
         print(rightAnswer)
@@ -255,7 +262,7 @@ class SecondViewController: UIViewController {
             String($0)
         }
         //Now random IntString contains the full URL for each of its 3 random strings
-       
+    
         for i in 0...(randomIntString.count-1){
             randomIntString[i] = baseURL + randomIntString[i]
             isAnswer[randomIntString[i]] = false
@@ -355,12 +362,14 @@ class SecondViewController: UIViewController {
         
     }
     func loadPics(){
-        pokemonImages = populatePics(1,151,10)
+        pokemonImages = populatePics(pokemonGenerationStart,pokemonGenerationEnd,20)
         print(pokemonImages)
         
+        //loads the pokeArray with the apiCall
         for i in 0...(pokeArray.count-1){
             pokeArray[i] = baseURL + String(pokemonImages[i])
         }
+        //updates the score
         scoreLabel.text = "Score: \(score)"
         
     }

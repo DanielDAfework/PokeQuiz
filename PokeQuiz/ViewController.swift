@@ -12,20 +12,87 @@ import UIKit
 class ViewController: UIViewController {
     //remeber this is a button
     @IBOutlet weak var WTPLabel: UIButton!
-    
+    //Label where the selected game mode is displayed
     @IBOutlet weak var greenScreenLabel: UILabel!
     
+    @IBOutlet weak var gen2: UIButton!
+    
+    @IBOutlet weak var gen3: UIButton!
+    
+    @IBOutlet weak var gen4: UIButton!
+    
+    @IBOutlet weak var gen5: UIButton!
+    
+    @IBOutlet weak var gen6: UIButton!
+    
+    @IBOutlet weak var gen7: UIButton!
+    
+    @IBOutlet weak var all: UIButton!
+    //variables that our passed through the segue to determine the range of pokemon to generate
+    var pokeGenStart = 0
+    var pokeGenEnd = 0
+    
     @IBAction func playButton(_ sender: Any) {
-        if( greenScreenLabel.text == "Who's That Pokemon?"){
+        if( greenScreenLabel.text != ""){
             performSegue(withIdentifier: "WhoPokemon", sender: self)
           
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if (segue.identifier == "WhoPokemon"){
+            let destinatinoVC = segue.destination as! SecondViewController
+            destinatinoVC.pokemonGenerationStart = pokeGenStart
+            destinatinoVC.pokemonGenerationEnd = pokeGenEnd
+        }
+    }
     
     
+    //function which sets the range of what pokemon will be generated depending on how which generation they select
     @IBAction func WTPAction(_ sender: Any) {
-        greenScreenLabel.text = "Who's That Pokemon?"
+        if((sender as AnyObject).tag == 1){
+        greenScreenLabel.text = "Gen 1"
+            pokeGenStart = 1
+            pokeGenEnd = 151
+        }
+        else if((sender as AnyObject).tag == 3){
+            greenScreenLabel.text = "Gen 2"
+            pokeGenStart = 152
+            pokeGenEnd = 251
+        }
+            
+        else if((sender as AnyObject).tag == 4){
+            greenScreenLabel.text = "Gen 3"
+            pokeGenStart = 252
+            pokeGenEnd = 386
+        }
+            
+        else if((sender as AnyObject).tag == 5){
+            greenScreenLabel.text = "Gen 4"
+            pokeGenStart = 387
+            pokeGenEnd = 493
+        }
+            
+        else if((sender as AnyObject).tag == 6){
+            greenScreenLabel.text = "Gen 5"
+            pokeGenStart = 494
+            pokeGenEnd = 649
+        }
+        else if ((sender as AnyObject).tag == 7){
+            greenScreenLabel.text = "Gen 6"
+            pokeGenStart = 650
+            pokeGenEnd = 721
+        }
+        else if ((sender as AnyObject).tag == 8){
+            greenScreenLabel.text = "Gen 7"
+            pokeGenStart = 722
+            pokeGenEnd = 807
+        }
+        else if ((sender as AnyObject).tag == 9){
+            greenScreenLabel.text = "All"
+            pokeGenStart = 1
+            pokeGenEnd = 807
+        }
     }
     
     

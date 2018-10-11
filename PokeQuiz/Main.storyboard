@@ -37,15 +37,99 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iO-e9-CjN">
-                                        <rect key="frame" x="8" y="40" width="262" height="48"/>
+                                        <rect key="frame" x="8" y="31" width="111" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Who's That Pokemon?">
+                                        <state key="normal" title="Gen 1">
                                             <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1LU-kw-zEb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd8-PW-F9S">
+                                        <rect key="frame" x="159" y="31" width="111" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Gen 2">
+                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g5q-14-XuW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69H-V5-BAA">
+                                        <rect key="frame" x="8" y="87" width="111" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Gen 3">
+                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dp1-sj-q6p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhE-4J-gpL">
+                                        <rect key="frame" x="159" y="87" width="111" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Gen 4">
+                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TYY-LM-Igp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33b-OK-8sX">
+                                        <rect key="frame" x="8" y="143" width="111" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Gen 5">
+                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k9I-fo-cZQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6A-ga-IB9">
+                                        <rect key="frame" x="159" y="143" width="111" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Gen 6">
+                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k54-9T-sgy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-yC-VAB">
+                                        <rect key="frame" x="8" y="199" width="111" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Gen 7">
+                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7pA-IS-QFP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPd-ip-3vk">
+                                        <rect key="frame" x="159" y="199" width="111" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="All">
+                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lIe-Q5-S5U"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -127,13 +211,20 @@
                     </view>
                     <connections>
                         <outlet property="WTPLabel" destination="9iO-e9-CjN" id="4SI-tW-7zN"/>
+                        <outlet property="all" destination="ZPd-ip-3vk" id="dar-2B-7Kf"/>
+                        <outlet property="gen2" destination="qd8-PW-F9S" id="b1Z-1K-6Mm"/>
+                        <outlet property="gen3" destination="69H-V5-BAA" id="AdO-lL-Sbb"/>
+                        <outlet property="gen4" destination="QhE-4J-gpL" id="pPB-fB-QIw"/>
+                        <outlet property="gen5" destination="33b-OK-8sX" id="88k-23-I3A"/>
+                        <outlet property="gen6" destination="k6A-ga-IB9" id="PcQ-Dj-Q2G"/>
+                        <outlet property="gen7" destination="3GZ-yC-VAB" id="2r7-ye-MgC"/>
                         <outlet property="greenScreenLabel" destination="LA8-Sd-pxv" id="ii3-WC-7vd"/>
                         <segue destination="HN4-dv-yMR" kind="show" identifier="WhoPokemon" id="7Gd-Ea-JBj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-254" y="126"/>
+            <point key="canvasLocation" x="-255.19999999999999" y="125.4872563718141"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="xRS-iE-rT0">
@@ -186,7 +277,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
-                                <state key="normal" title="Pause">
+                                <state key="normal" title="Hint">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
