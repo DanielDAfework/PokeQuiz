@@ -64,6 +64,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var questionNumberLabel: UILabel!
     @IBOutlet weak var pictureView: UIImageView!
     
+    @IBOutlet weak var menu: UIButton!
     
     
     override func viewDidLoad() {
@@ -214,7 +215,7 @@ class SecondViewController: UIViewController {
     func randomChoice() -> [Int]{
         var randomChoices = [Int]()
         while randomChoices.count != 3{
-            let myNumber = Int(arc4random_uniform(807)+1)
+            let myNumber = Int(arc4random_uniform(649)+1)
             if (!randomChoices.contains(myNumber) &&
                 !pokemonImages.contains(myNumber)){
                 randomChoices.append(myNumber)
@@ -294,6 +295,7 @@ class SecondViewController: UIViewController {
             let alert = UIAlertController(title: "Congrats You've Finished the Quiz!", message: "Would you like to play again?", preferredStyle: .alert)
             let restartAction = UIAlertAction(title: "Restart" ,style: .default, handler:{
                 (UIAlertAction) in
+                self.scoreLabel.text = "Score: \(self.score)"
                 self.nextPokemon()
             })
             alert.addAction(restartAction)
@@ -390,6 +392,10 @@ class SecondViewController: UIViewController {
         nextPokemon()
         
         
+    }
+    
+    @IBAction func menu(_ sender: Any) {
+           dismiss(animated: true, completion: nil)
     }
     
 }

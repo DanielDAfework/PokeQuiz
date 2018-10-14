@@ -84,44 +84,8 @@
                                             <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TYY-LM-Igp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33b-OK-8sX">
-                                        <rect key="frame" x="8" y="143" width="111" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Gen 5">
-                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k9I-fo-cZQ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6A-ga-IB9">
-                                        <rect key="frame" x="159" y="143" width="111" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Gen 6">
-                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k54-9T-sgy"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-yC-VAB">
-                                        <rect key="frame" x="8" y="199" width="111" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Gen 7">
-                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7pA-IS-QFP"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPd-ip-3vk">
-                                        <rect key="frame" x="159" y="199" width="111" height="48"/>
+                                        <rect key="frame" x="8" y="199" width="262" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -130,6 +94,18 @@
                                         </state>
                                         <connections>
                                             <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lIe-Q5-S5U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33b-OK-8sX">
+                                        <rect key="frame" x="84" y="143" width="111" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Gen 5">
+                                            <color key="titleColor" red="1" green="0.99034621879999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="WTPAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k9I-fo-cZQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -216,8 +192,6 @@
                         <outlet property="gen3" destination="69H-V5-BAA" id="AdO-lL-Sbb"/>
                         <outlet property="gen4" destination="QhE-4J-gpL" id="pPB-fB-QIw"/>
                         <outlet property="gen5" destination="33b-OK-8sX" id="88k-23-I3A"/>
-                        <outlet property="gen6" destination="k6A-ga-IB9" id="PcQ-Dj-Q2G"/>
-                        <outlet property="gen7" destination="3GZ-yC-VAB" id="2r7-ye-MgC"/>
                         <outlet property="greenScreenLabel" destination="LA8-Sd-pxv" id="ii3-WC-7vd"/>
                         <segue destination="HN4-dv-yMR" kind="show" identifier="WhoPokemon" id="7Gd-Ea-JBj"/>
                     </connections>
@@ -273,19 +247,20 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlR-a0-wJf">
-                                <rect key="frame" x="16" y="606" width="102" height="41"/>
+                                <rect key="frame" x="16" y="599" width="126" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
-                                <state key="normal" title="Hint">
+                                <state key="normal" title="Main Menu">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="menu:" destination="HN4-dv-yMR" eventType="touchUpInside" id="P5R-rq-90t"/>
                                     <action selector="tester:" destination="HN4-dv-yMR" eventType="touchUpInside" id="wak-Mt-djl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTf-bK-qyQ">
-                                <rect key="frame" x="113" y="422" width="149" height="49"/>
+                                <rect key="frame" x="48" y="422" width="278" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
@@ -296,20 +271,8 @@
                                     <action selector="topButonAction:" destination="HN4-dv-yMR" eventType="touchUpInside" id="nxa-X6-fxL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqz-6u-dY9">
-                                <rect key="frame" x="16" y="479" width="149" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                <state key="normal" title="Y">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="leftButonAction:" destination="HN4-dv-yMR" eventType="touchUpInside" id="i6c-4V-u04"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDx-1q-9GM">
-                                <rect key="frame" x="113" y="536" width="149" height="49"/>
+                                <rect key="frame" x="48" y="542" width="278" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
@@ -321,7 +284,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ll-pM-Pq9">
-                                <rect key="frame" x="210" y="479" width="149" height="49"/>
+                                <rect key="frame" x="192" y="479" width="183" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
@@ -339,6 +302,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqz-6u-dY9">
+                                <rect key="frame" x="0.0" y="479" width="189" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Y">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftButonAction:" destination="HN4-dv-yMR" eventType="touchUpInside" id="i6c-4V-u04"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Nth-Xg-qJ8"/>
@@ -346,6 +321,7 @@
                     <connections>
                         <outlet property="bottomButon" destination="lDx-1q-9GM" id="YVb-sV-jjE"/>
                         <outlet property="leftButon" destination="Cqz-6u-dY9" id="i1b-aA-9az"/>
+                        <outlet property="menu" destination="OlR-a0-wJf" id="h7d-H7-GVj"/>
                         <outlet property="pictureView" destination="KzS-9p-u39" id="q80-ag-Brg"/>
                         <outlet property="questionNumberLabel" destination="U4d-4g-IMc" id="NOK-P8-CQu"/>
                         <outlet property="rightButon" destination="1ll-pM-Pq9" id="YUf-V6-1FO"/>

@@ -23,9 +23,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var gen5: UIButton!
     
-    @IBOutlet weak var gen6: UIButton!
-    
-    @IBOutlet weak var gen7: UIButton!
     
     @IBOutlet weak var all: UIButton!
     //variables that our passed through the segue to determine the range of pokemon to generate
@@ -78,20 +75,11 @@ class ViewController: UIViewController {
             pokeGenStart = 494
             pokeGenEnd = 649
         }
-        else if ((sender as AnyObject).tag == 7){
-            greenScreenLabel.text = "Gen 6"
-            pokeGenStart = 650
-            pokeGenEnd = 721
-        }
-        else if ((sender as AnyObject).tag == 8){
-            greenScreenLabel.text = "Gen 7"
-            pokeGenStart = 722
-            pokeGenEnd = 807
-        }
+      
         else if ((sender as AnyObject).tag == 9){
-            greenScreenLabel.text = "All"
+            greenScreenLabel.text = "Gen 1-5"
             pokeGenStart = 1
-            pokeGenEnd = 807
+            pokeGenEnd = 649
         }
     }
     
